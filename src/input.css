@@ -1,0 +1,14 @@
+/* sora | google font */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+/* tailwindcss */
+@import 'tailwindcss';
+
+body{
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;  /* For macOS (Chrome/Safari) */
+  -moz-osx-font-smoothing: grayscale;   /* For macOS (Firefox) */
+  text-rendering: optimizeLegibility;   /* Improves readability */
+}
