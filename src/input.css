@@ -1,14 +1,98 @@
-/* sora | google font */
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+/* sinter | google font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 /* tailwindcss */
 @import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *)); /* dark-mode override */
 
 body{
-  font-family: "Sora", sans-serif;
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   -webkit-font-smoothing: antialiased;  /* For macOS (Chrome/Safari) */
   -moz-osx-font-smoothing: grayscale;   /* For macOS (Firefox) */
   text-rendering: optimizeLegibility;   /* Improves readability */
+}
+
+:root {
+  --gray-950: #030712;
+  --gray-900: #111827;
+  --gray-800: #1f2937;
+  --gray-700: #374151;
+  --gray-600: #4b5563;
+  --gray-500: #6b7280;
+  --gray-400: #9ca3af;
+  --gray-300: #d1d5db;
+  --gray-200: #e5e7eb;
+  --gray-100: #f3f4f6;
+  --gray-50: #f9fafb;
+  --default: #f9fafb;
+  --emerald: #10b981;
+
+  /* button */
+  --light-btn-bg: #111827;
+  --light-btn-hover: #374151;
+  --light-btn-text: #f9fafb;
+}
+
+.dark {
+  --default: #030712;
+  --gray-950: #ffffff;
+  --gray-900: #f9fafb;
+  --gray-800: #f3f4f6;
+  --gray-700: #e5e7eb;
+  --gray-600: #d1d5db;
+  --gray-500: #9ca3af;
+  --gray-400: #6b7280;
+  --gray-300: #4b5563;
+  --gray-200: #374151;
+  --gray-100: #1f2937;
+  --gray-50: #111827;
+
+  /* button */
+  --light-btn-bg: #f9fafb;
+  --light-btn-hover: #e5e7eb;
+  --light-btn-text: #111827;
+}
+
+
+/* HAMBURGER MENU */
+.hamburger{
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+    background-color: transparent;
+    border: none;
+}
+.hamburger-top,.hamburger-middle,.hamburger-bottom{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 26.5px;
+    height: 2.5px;
+    background-color: var(--gray-900);
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+.hamburger-middle{
+    transform: translateY(7px);
+    transition: 0s;
+}
+.hamburger-bottom{
+    transform: translateY(14px);
+}
+.open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+.open .hamburger-top{
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+.open .hamburger-middle{
+    display: none;
+}
+.open .hamburger-bottom{
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
 }

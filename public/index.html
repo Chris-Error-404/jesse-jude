@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jesse Jude</title>
 
+    <!--flash prevention script | keep above main css -->
+    <script src="./js/theme-flash-prevent.js"></script>
+    
+
     <!--main css-->
     <link rel="stylesheet" href="./css/output.css">
 
@@ -12,15 +16,87 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./css/boxicons/css/boxicons.min.css">
 
-    <!--Sora | Google fonts-->
+    <!--Inter | Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
     <!--CSS AOS library-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--theme flash prevention script-->
 </head>
-<body>
+<body class="bg-[var(--default)]">
+
+  <!--navbar-->
+  <nav class="sticky top-0 z-50 bg-[var(--default)]">
+    <div class="container mx-auto p-4 max-w-[1400px] flex justify-between items-center">
+      <a href="./index.html" class="text-xl font-semibold text-[var(--gray-900)]">Jesse_Jude</a>
+
+      <!--desktop navitems-->
+      <ul class="hidden lg:flex items-center justify-center gap-6 text-base text-[var(--gray-600)] duration-200 transition-all ease-linear">
+        <li><a href="#" class="hover:text-[var(--gray-950)]">About</a></li>
+        <li><a href="#" class="hover:text-[var(--gray-950)]">Work</a></li>
+        <li><a href="#" class="hover:text-[var(--gray-950)]">Testimonials</a></li>
+        <li><a href="#" class="hover:text-[var(--gray-950)]">Contact</a></li>
+        <li><i class="theme-toggle bx bx-sun text-xl" role="button" tabindex="0" aria-label="Toggle theme"></i></li>
+        <li><a href="#" class="bg-[var(--gray-900)] py-2.5 px-5 text-sm text-[var(--gray-50)] rounded-xl hover:bg-[var(--light-btn-hover)]">Download CV</a></li>
+      </ul>
+
+      <!--hamburger menu-->
+      <button id="menu-btn" class="hamburger block md:hidden" type = "button" title ="hamburger">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+      </button>
+    </div>
+
+  </nav>
+
+  <!--hero-->
+  <section id="hero">
+    <div class="container mx-auto p-4 max-w-[1400px] min-h-[80svh] flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
+
+      <!--grid child /-->
+      <div class="space-y-4 w-[100%] lg:w-[50%]">
+      <h1 class="text-[min(8vw,50px)] font-bold text-[var(--gray-900)]">Hi, I'm Jesse 👋</h1>
+      <p class="text-base text-[var(--gray-600)]">I'm a full stack developer (React.js & Node.js) with a focus on creating (and occasionally designing) exceptional digital experiences that are fast, accessible, visually appealing, and responsive. Even though I have been creating web applications for over 7 years, I still love it as if it was something new.</p>
+
+      <div class="space-y-1 mt-8">
+        <a href="#" class="text-base text-[var(--gray-600)] flex items-center gap-2"><i class="bx bx-map text-xl"></i> Rivers State, Nigeria</a>
+        <p class="text-base text-[var(--gray-600)] flex items-center gap-2"><i class="bx bxs-circle text-[var(--emerald)] text-lg"></i> Available for Work</p>
+      </div>
+
+      <div class="flex items-center mt-8 gap-4">
+        <a href="#"><i class="bx bxl-linkedin text-[var(--gray-800)] text-3xl"></i></a>
+        <a href="#"><i class="bx bxl-github text-[var(--gray-800)] text-3xl"></i></a>
+        <a href="#"><i class="bx bxl-twitter text-[var(--gray-800)] text-3xl"></i></a>
+        <a href="#"><i class="bx bxl-instagram text-[var(--gray-800)] text-3xl"></i></a>
+      </div>
+      </div>
+
+      <!--grid child /-->
+      <div class="w-[100%] lg:w-[40%] flex items-start justify-center">
+        <div class="relative inline-block w-[200px] lg:w-[350px]">
+          <!-- Outer stack -->
+          <div class="absolute inset-0 translate-x-4 translate-y-4 bg-[var(--gray-200)]"></div>
+      
+          <!-- Inner stack -->
+          <div class="absolute inset-0 translate-x-2 translate-y-2 bg-[var(--default)]"></div>
+          <!-- Image on top -->
+          <img src="./img/jesse-jude.jpg" 
+              alt="jesse-jude" 
+              class="relative w-[200px] lg:w-[350px] h-auto block shadow-lg">
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+<script src="./js/main.js"></script>
+<!--CSS AOS Script-->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init({
