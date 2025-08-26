@@ -55,7 +55,7 @@
 
   <!--hero-->
   <section id="hero">
-    <div class="container mx-auto p-4 max-w-[1400px] min-h-[80svh] flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
+    <div class="container mx-auto p-4 pb-8 max-w-[1400px] lg:min-h-[90svh] flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-0">
 
       <!--grid child /-->
       <div class="space-y-4 w-[100%] lg:w-[50%]">
@@ -77,16 +77,18 @@
 
       <!--grid child /-->
       <div class="w-[100%] lg:w-[40%] flex items-start justify-center">
-        <div class="relative inline-block w-[200px] lg:w-[350px]">
-          <!-- Outer stack -->
-          <div class="absolute inset-0 translate-x-4 translate-y-4 bg-[var(--gray-200)]"></div>
-      
-          <!-- Inner stack -->
-          <div class="absolute inset-0 translate-x-2 translate-y-2 bg-[var(--default)]"></div>
+        <div class="relative inline-block w-[250px] lg:w-[350px]">
+          <!-- Outer stack (furthest right/down) -->
+          <div class="absolute inset-0 translate-x-6 translate-y-6 rounded-lg bg-[var(--gray-200)]"></div>
+
+          <!-- Inner stack (a bit right/down) -->
+          <div class="absolute inset-0 translate-x-3 translate-y-3 rounded-lg bg-[var(--default)]"></div>
+
+
           <!-- Image on top -->
           <img src="./img/jesse-jude.jpg" 
               alt="jesse-jude" 
-              class="relative w-[200px] lg:w-[350px] h-auto block shadow-lg">
+              class="relative w-[250px] lg:w-[350px] rounded-lg h-auto block shadow-lg">
         </div>
       </div>
 
@@ -94,6 +96,48 @@
     </div>
   </section>
 
+  <!--about-->
+  <section id="about" class="bg-[var(--gray-50)] py-6">
+    <div class="container mx-auto p-4 max-w-[1400px]">
+      <h2 class="text-center text-lg mb-15"><span class="text-[var(--gray-600)] text-center bg-[var(--gray-200)] px-4 py-1 rounded-full w-fit">About me</span></h2>
+
+      <div class="flex flex-col lg:flex-row items-center justify-between lg:gap-0 gap-14">
+
+        <!--grid child/-->
+        <div class="w-[100%] lg:w-[50%] flex items-start justify-center">
+        <div class="relative inline-block w-[300px] lg:w-[400px]">
+          <!-- Outer stack (furthest right/down) -->
+          <div class="absolute inset-0 translate-x-6 translate-y-6 rounded-lg bg-[var(--gray-200)]"></div>
+
+          <!-- Inner stack (a bit right/down) -->
+          <div class="absolute inset-0 translate-x-3 translate-y-3 rounded-lg bg-[var(--default)]"></div>
+
+
+          <!-- Image on top -->
+          <img src="./img/jesse-jude.jpg" 
+              alt="jesse-jude" 
+              class="relative w-[300px] lg:w-[400px] rounded-lg h-auto block shadow-lg">
+        </div>
+        </div>
+
+        <!--grid child/-->
+        <div class="space-y-4 lg:w-[50%]">
+          <h3 class="text-[var(--gray-900)] font-semibold text-2xl">Curious about me?</h3>
+            <p class="text-[var(--gray-600)]">
+              I am a creative and detail-oriented individual with a strong interest in design, technology, and problem solving. Over the years, I have developed a diverse skill set that allows me to adapt quickly to new challenges and bring fresh perspectives to every project I take on.
+            </p>
+
+            <p class="text-[var(--gray-600)]">
+              My background includes working on both independent and collaborative projects, where I have gained valuable experience in managing deadlines, communicating effectively with teams, and delivering high-quality results. I enjoy learning new tools and techniques that help me improve my workflow and stay up to date with industry trends.
+            </p>
+
+            <p class="text-[var(--gray-600)]">
+              Beyond technical skills, I value creativity and curiosity as driving forces in my personal and professional growth. I take pride in blending logical thinking with an eye for design, whether that means solving a complex problem, creating engaging visuals, or finding innovative ways to streamline processes.
+            </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
 <script src="./js/main.js"></script>
 <!--CSS AOS Script-->
