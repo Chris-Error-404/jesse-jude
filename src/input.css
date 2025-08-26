@@ -5,6 +5,10 @@
 @import 'tailwindcss';
 @custom-variant dark (&:where(.dark, .dark *)); /* dark-mode override */
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;

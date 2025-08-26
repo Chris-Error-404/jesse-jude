@@ -37,12 +37,14 @@
 
       <!--desktop navitems-->
       <ul class="hidden lg:flex items-center justify-center gap-6 text-base text-[var(--gray-600)] duration-200 transition-all ease-linear">
-        <li><a href="#" class="hover:text-[var(--gray-950)]">About</a></li>
-        <li><a href="#" class="hover:text-[var(--gray-950)]">Work</a></li>
-        <li><a href="#" class="hover:text-[var(--gray-950)]">Testimonials</a></li>
-        <li><a href="#" class="hover:text-[var(--gray-950)]">Contact</a></li>
-        <li><i class="theme-toggle bx bx-sun text-xl" role="button" tabindex="0" aria-label="Toggle theme"></i></li>
-        <li><a href="#" class="bg-[var(--gray-900)] py-2.5 px-5 text-sm text-[var(--gray-50)] rounded-xl hover:bg-[var(--light-btn-hover)]">Download CV</a></li>
+        <li><a href="#" class="hover:text-[var(--gray-950)] font-normal">About</a></li>
+        <li><a href="#" class="hover:text-[var(--gray-950)] font-normal">Skills</a></li>
+        <li><a href="#" class="hover:text-[var(--gray-950)] font-normal">Experience</a></li>
+        <li><a href="#" class="hover:text-[var(--gray-950)] font-normal">Work</a></li>
+        <li><a href="#" class="hover:text-[var(--gray-950)] font-normal">Testimonials</a></li>
+        <li><a href="#" class="hover:text-[var(--gray-950)] font-normal">Contact</a></li>
+        <li><i class="theme-toggle bx bx-sun text-xl cursor-pointer" role="button" tabindex="0" aria-label="Toggle theme"></i></li>
+        <li><a href="#" class="bg-[var(--gray-900)] py-2.5 px-5 text-sm text-[var(--gray-50)] font-normal rounded-xl hover:bg-[var(--light-btn-hover)]">Download CV</a></li>
       </ul>
 
       <!--hamburger menu-->
@@ -52,7 +54,6 @@
           <span class="hamburger-bottom"></span>
       </button>
     </div>
-
   </nav>
 
   <!--hero-->
@@ -142,7 +143,7 @@
   </section>
 
   <!--skills-->
-  <section id="skills" class="py-10">
+  <section id="skills" class="py-10 pt-6 lg:pt-10">
     <div class="container mx-auto p-4 max-w-[1400px]">
       <h2 class="text-center text-lg mb-4"><span class="text-[var(--gray-600)] text-center bg-[var(--gray-200)] px-4 py-1 rounded-full w-fit">Skills</span></h2>
       <p class="text-[var(--gray-600)] text-center mb-10">The skills, tools and technologies I am really good at:</p>
@@ -206,6 +207,82 @@
 
       </div>
     </div>
+  </section>
+
+  <section id="experience" class="bg-[var(--gray-50)] py-10 pt-6 lg:pt-10">
+      <div class="container mx-auto p-4 max-w-[1400px]">
+      <h2 class="text-center text-lg mb-4"><span class="text-[var(--gray-600)] text-center bg-[var(--gray-200)] px-4 py-1 rounded-full w-fit">Experience</span></h2>
+      <p class="text-[var(--gray-600)] text-center mb-10">Here is a quick summary of my most recent experiences:</p>
+
+      <div class="flex flex-col gap-6">
+        
+        <!--card /-->
+        <div class="bg-[var(--default)] shadow-md rounded-md p-6">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-start lg:justify-between mb-6 gap-2.5">
+            <a href="#" class="text-[var(--gray-900)] font-semibold text-xl flex items-center justify-center gap-4"><i class="bx bx-briefcase text-xl"></i> Sr. Backend Developer at Google</a> <h4 class="text-[var(--gray-600)] text-base">Nov - 2021</h4>
+          </div>
+          
+          <div class="grid lg:grid-cols-2 gap-6">
+            <p class="text-[var(--gray-600)]">
+              During my time as a Backend Developer at Google, I contributed to the design, development, and optimization of large-scale backend systems. I worked on building reliable APIs, improving system performance, and collaborating with cross-functional teams to deliver high-quality solutions that supported millions of users worldwide. The role allowed me to gain hands-on experience with scalable architectures, cloud technologies, and best practices in backend engineering.
+            </p>
+
+            <ul class="list-disc pl-6 text-[var(--gray-600)]">
+              <li>Developed and maintained RESTful APIs to support high-traffic applications</li>
+              <li>Optimized database queries and caching strategies to improve system performance</li>
+              <li>Implemented security best practices for authentication and data protection</li>
+              <li>Worked with distributed systems and microservice architectures</li>
+              <li>Collaborated with frontend teams to ensure seamless integration of services</li>
+              <li>Gained experience with cloud platforms, containerization, and CI/CD pipelines</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!--card /-->
+        <div class="bg-[var(--default)] shadow-md rounded-md p-6">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-start lg:justify-between mb-6 gap-2.5">
+            <a href="#" class="text-[var(--gray-900)] font-semibold text-xl flex items-center justify-center gap-4"><i class="bx bx-briefcase text-xl"></i> Sr. Backend Developer at Google</a> <h4 class="text-[var(--gray-600)] text-base">Nov - 2021</h4>
+          </div>
+          
+          <div class="grid lg:grid-cols-2 gap-6">
+            <p class="text-[var(--gray-600)]">
+              During my time as a Backend Developer at Google, I contributed to the design, development, and optimization of large-scale backend systems. I worked on building reliable APIs, improving system performance, and collaborating with cross-functional teams to deliver high-quality solutions that supported millions of users worldwide. The role allowed me to gain hands-on experience with scalable architectures, cloud technologies, and best practices in backend engineering.
+            </p>
+
+            <ul class="list-disc pl-6 text-[var(--gray-600)]">
+              <li>Developed and maintained RESTful APIs to support high-traffic applications</li>
+              <li>Optimized database queries and caching strategies to improve system performance</li>
+              <li>Implemented security best practices for authentication and data protection</li>
+              <li>Worked with distributed systems and microservice architectures</li>
+              <li>Collaborated with frontend teams to ensure seamless integration of services</li>
+              <li>Gained experience with cloud platforms, containerization, and CI/CD pipelines</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!--card /-->
+        <div class="bg-[var(--default)] shadow-md rounded-md p-6">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-start lg:justify-between mb-6 gap-2.5">
+            <a href="#" class="text-[var(--gray-900)] font-semibold text-xl flex items-center justify-center gap-4"><i class="bx bx-briefcase text-xl"></i> Sr. Backend Developer at Google</a> <h4 class="text-[var(--gray-600)] text-base">Nov - 2021</h4>
+          </div>
+          
+          <div class="grid lg:grid-cols-2 gap-6">
+            <p class="text-[var(--gray-600)]">
+              During my time as a Backend Developer at Google, I contributed to the design, development, and optimization of large-scale backend systems. I worked on building reliable APIs, improving system performance, and collaborating with cross-functional teams to deliver high-quality solutions that supported millions of users worldwide. The role allowed me to gain hands-on experience with scalable architectures, cloud technologies, and best practices in backend engineering.
+            </p>
+
+            <ul class="list-disc pl-6 text-[var(--gray-600)]">
+              <li>Developed and maintained RESTful APIs to support high-traffic applications</li>
+              <li>Optimized database queries and caching strategies to improve system performance</li>
+              <li>Implemented security best practices for authentication and data protection</li>
+              <li>Worked with distributed systems and microservice architectures</li>
+              <li>Collaborated with frontend teams to ensure seamless integration of services</li>
+              <li>Gained experience with cloud platforms, containerization, and CI/CD pipelines</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
   </section>
 
 <script src="./js/main.js"></script>
