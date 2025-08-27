@@ -15,12 +15,47 @@ window.addEventListener("scroll", function () {
 //HAMBURGER MENU SCRIPT
 const btn = document.getElementById('menu-btn');
 const nav = document.getElementById('menu');
+const overlay = document.getElementById('overlay');
+const themeToggle = document.querySelector('.theme-toggle'); // theme button inside "Switch Theme"
+const menuLinks = nav.querySelectorAll('li a'); // all <a> links inside li
+
+function openMenu() {
+  btn.classList.add('open');
+  nav.classList.remove('-translate-x-full');
+  overlay.classList.remove('hidden');
+  document.body.classList.add('overflow-hidden'); // stop scrolling
+}
+
+function closeMenu() {
+  btn.classList.remove('open');
+  nav.classList.add('-translate-x-full');
+  overlay.classList.add('hidden');
+  document.body.classList.remove('overflow-hidden'); // restore scrolling
+}
 
 btn.addEventListener('click', () => {
-  btn.classList.toggle('open')
-  nav.classList.toggle('open')
-  nav.classList.toggle('close')
-})
+  if (nav.classList.contains('-translate-x-full')) {
+    openMenu();
+  } else {
+    closeMenu();
+  }
+});
+
+overlay.addEventListener('click', closeMenu);
+
+// Close menu when clicking links, except Switch Theme
+menuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    closeMenu();
+  });
+});
+
+// Prevent close on Switch Theme
+themeToggle.addEventListener('click', (e) => {
+  e.stopPropagation(); // stops it from closing
+  // put your theme toggle code here
+});
+
 
 
 //THEME TOGGLE SCRIPT
