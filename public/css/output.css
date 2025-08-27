@@ -289,6 +289,9 @@
   .min-h-\[30\%\] {
     min-height: 30%;
   }
+  .w-\[40px\] {
+    width: 40px;
+  }
   .w-\[60px\] {
     width: 60px;
   }
