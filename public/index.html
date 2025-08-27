@@ -44,7 +44,7 @@
         <li><a href="#" class="hover:text-[var(--gray-950)] font-normal">Testimonials</a></li>
         <li><a href="#" class="hover:text-[var(--gray-950)] font-normal">Contact</a></li>
         <li><i class="theme-toggle bx bx-sun text-xl cursor-pointer" role="button" tabindex="0" aria-label="Toggle theme"></i></li>
-        <li><a href="#" class="bg-[var(--gray-900)] py-2.5 px-5 text-sm text-[var(--gray-50)] font-normal rounded-xl hover:bg-[var(--light-btn-hover)]">Download CV</a></li>
+        <li><a href="#" class="bg-[var(--gray-900)] py-2.5 px-5 text-sm text-[var(--gray-50)] font-medium rounded-xl hover:bg-[var(--light-btn-hover)]">Download CV</a></li>
       </ul>
 
       <!--hamburger menu-->
@@ -71,10 +71,10 @@
       </div>
 
       <div class="flex items-center mt-8 gap-4">
-        <a href="#"><i class="bx bxl-linkedin text-[var(--gray-800)] text-3xl"></i></a>
-        <a href="#"><i class="bx bxl-github text-[var(--gray-800)] text-3xl"></i></a>
-        <a href="#"><i class="bx bxl-twitter text-[var(--gray-800)] text-3xl"></i></a>
-        <a href="#"><i class="bx bxl-instagram text-[var(--gray-800)] text-3xl"></i></a>
+        <a href="#" class="duration-200 transition-all ease-linear hover:bg-[var(--light-btn-hover)]"><i class="bx bxl-linkedin text-[var(--gray-800)] text-3xl"></i></a>
+        <a href="#" class="duration-200 transition-all ease-linear hover:bg-[var(--light-btn-hover)]"><i class="bx bxl-github text-[var(--gray-800)] text-3xl"></i></a>
+        <a href="#" class="duration-200 transition-all ease-linear hover:bg-[var(--light-btn-hover)]"><i class="bx bxl-twitter text-[var(--gray-800)] text-3xl"></i></a>
+        <a href="#" class="duration-200 transition-all ease-linear hover:bg-[var(--light-btn-hover)]"><i class="bx bxl-instagram text-[var(--gray-800)] text-3xl"></i></a>
       </div>
       </div>
 
@@ -311,7 +311,7 @@
       <div class="flex flex-col gap-6 lg:gap-10">
         
         <!--card /-->
-        <div class="bg-[var(--default)] shadow-md rounded-xl p-6">
+        <div class="bg-[var(--exp-card-bg)] shadow-md rounded-xl p-6">
           <div class="flex flex-col lg:flex-row lg:items-center justify-start lg:justify-between mb-6 gap-2.5">
             <a href="#" class="text-[var(--gray-900)] font-semibold text-xl flex items-center justify-center gap-4"><i class="bx bx-briefcase text-xl"></i> Sr. Backend Developer at Google</a> <h4 class="text-[var(--gray-600)] text-base">Nov - 2021</h4>
           </div>
@@ -333,7 +333,7 @@
         </div>
         
         <!--card /-->
-        <div class="bg-[var(--default)] shadow-md rounded-xl p-6">
+        <div class="bg-[var(--exp-card-bg)] shadow-md rounded-xl p-6">
           <div class="flex flex-col lg:flex-row lg:items-center justify-start lg:justify-between mb-6 gap-2.5">
             <a href="#" class="text-[var(--gray-900)] font-semibold text-xl flex items-center justify-center gap-4"><i class="bx bx-briefcase text-xl"></i> Sr. Backend Developer at Google</a> <h4 class="text-[var(--gray-600)] text-base">Nov - 2021</h4>
           </div>
@@ -355,7 +355,7 @@
         </div>
         
         <!--card /-->
-        <div class="bg-[var(--default)] shadow-md rounded-xl p-6">
+        <div class="bg-[var(--exp-card-bg)] shadow-md rounded-xl p-6">
           <div class="flex flex-col lg:flex-row lg:items-center justify-start lg:justify-between mb-6 gap-2.5">
             <a href="#" class="text-[var(--gray-900)] font-semibold text-xl flex items-center justify-center gap-4"><i class="bx bx-briefcase text-xl"></i> Sr. Backend Developer at Google</a> <h4 class="text-[var(--gray-600)] text-base">Nov - 2021</h4>
           </div>
@@ -388,8 +388,8 @@
     <div class="flex flex-col gap-6 lg:gap-10">
 
       <!--card /-->
-      <div class="grid lg:grid-cols-2 items-center bg-[var(--gray-50)] rounded-xl">
-        <div class="bg-[var(--gray-100)] p-4 lg:p-6 flex items-center justify-center rounded-tl-xl rounded-tr-xl lg:rounded-tr-xl lg:rounded-bl-xl">
+      <div class="grid lg:grid-cols-2 items-center bg-[var(--work-text-bg)] shadow-md rounded-xl">
+        <div class="bg-[var(--preview-bg)] p-4 lg:p-6 flex items-center justify-center rounded-tl-xl rounded-tr-xl lg:rounded-tr-none lg:rounded-bl-xl">
           <img src="./img/preview.png" alt="" class="mb-[-14px]">
         </div>
 
@@ -419,9 +419,9 @@
       </div>
 
       <!--card /-->
-      <div class="grid lg:grid-cols-2 items-center bg-[var(--gray-50)] rounded-xl">
+      <div class="grid lg:grid-cols-2 items-center bg-[var(--work-text-bg)] shadow-md rounded-xl">
         <!--mobile-->
-        <div class="lg:hidden bg-[var(--gray-100)] p-4 lg:p-6 flex items-center justify-center rounded-tl-xl rounded-tr-xl lg:rounded-tr-xl lg:rounded-bl-xl">
+        <div class="lg:hidden bg-[var(--preview-bg)] p-4 lg:p-6 flex items-center justify-center rounded-tl-xl rounded-tr-xl lg:rounded-tr-xl lg:rounded-bl-xl">
           <img src="./img/preview.png" alt="" class="mb-[-14px]">
         </div>
 
@@ -450,15 +450,15 @@
         </div>
 
         <!--desktop only-->
-        <div class="hidden bg-[var(--gray-100)] p-4 lg:p-6 lg:flex items-center justify-center rounded-tr-xl rounded-br-xl">
+        <div class="hidden bg-[var(--preview-bg)] p-4 lg:p-6 lg:flex items-center justify-center rounded-tr-xl rounded-br-xl">
           <img src="./img/preview.png" alt="" class="mb-[-14px]">
         </div>
 
       </div>
 
       <!--card /-->
-      <div class="grid lg:grid-cols-2 items-center bg-[var(--gray-50)] rounded-xl">
-        <div class="bg-[var(--gray-100)] p-4 lg:p-6 flex items-center justify-center rounded-tl-xl rounded-tr-xl lg:rounded-tr-xl lg:rounded-bl-xl">
+      <div class="grid lg:grid-cols-2 items-center bg-[var(--work-text-bg)] shadow-md rounded-xl">
+        <div class="bg-[var(--preview-bg)] p-4 lg:p-6 flex items-center justify-center rounded-tl-xl  rounded-tr-xl lg:rounded-tr-none lg:rounded-bl-xl">
           <img src="./img/preview.png" alt="" class="mb-[-14px]">
         </div>
 
@@ -500,7 +500,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
         <!-- card /-->
-        <div class="lg:w-[100%] flex flex-col items-center justify-center gap-8 bg-[var(--default)] rounded-xl shadow-md px-6 py-12">
+        <div class="lg:w-[100%] flex flex-col items-center justify-center gap-8 bg-[var(--testimonial-card-bg)] rounded-xl shadow-md px-6 py-12">
           <img src="./img/client.svg" alt="">
 
           <p class="text-[var(--gray-600)] text-center">
@@ -514,7 +514,7 @@
         </div>
 
         <!-- card /-->
-        <div class="lg:w-[100%] flex flex-col items-center justify-center gap-8 bg-[var(--default)] rounded-xl shadow-md px-6 py-12">
+        <div class="lg:w-[100%] flex flex-col items-center justify-center gap-8 bg-[var(--testimonial-card-bg)] rounded-xl shadow-md px-6 py-12">
           <img src="./img/client.svg" alt="">
 
           <p class="text-[var(--gray-600)] text-center">
@@ -528,7 +528,7 @@
         </div>
 
         <!-- card /-->
-        <div class="lg:w-[100%] flex flex-col items-center justify-center gap-8 bg-[var(--default)] rounded-xl shadow-md px-6 py-12">
+        <div class="lg:w-[100%] flex flex-col items-center justify-center gap-8 bg-[var(--testimonial-card-bg)] rounded-xl shadow-md px-6 py-12">
           <img src="./img/client.svg" alt="">
 
           <p class="text-[var(--gray-600)] text-center">
@@ -542,7 +542,7 @@
         </div>
 
         <!-- card /-->
-        <div class="lg:w-[100%] flex flex-col items-center justify-center gap-8 bg-[var(--default)] rounded-xl shadow-md px-6 py-12">
+        <div class="lg:w-[100%] flex flex-col items-center justify-center gap-8 bg-[var(--testimonial-card-bg)] rounded-xl shadow-md px-6 py-12">
           <img src="./img/client.svg" alt="">
 
           <p class="text-[var(--gray-600)] text-center">
@@ -567,9 +567,9 @@
         <p class="text-[var(--gray-600)] text-center mb-10 lg:w-[40%]">What’s next? Feel free to reach out to me if you're looking for a developer,have a query, or simply want to connect.</p>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-2 mx-auto conatiner items-center max-w-[1200px] gap-10 lg:gap-0">
+<!--       <div class="grid grid-cols-1 lg:grid-cols-2 mx-auto conatiner items-center max-w-[1200px] gap-10 lg:gap-0">
 
-        <!--form-->
+        
         <form action="#" class="flex flex-col gap-2.5">
           <input type="text" required placeholder="Your Name" class="py-2 px-4 border border-[var(--gray-400)] rounded-md lg:max-w-[71%] min-w-[70%] text-[var(--gray-600)] placeholder:text-[var(--gray-600)]">
           <input type="text" required placeholder="Your Email" class="py-2 px-4 border border-[var(--gray-400)] rounded-md lg:max-w-[71%] min-w-[70%] text-[var(--gray-600)] placeholder:text-[var(--gray-600)]">
@@ -578,16 +578,14 @@
           <button type="submit" class="bg-[var(--gray-900)] text-[var(--gray-50)] hover:bg-[var(--light-btn-hover)] py-2 px-4 border border-[var(--gray-400)] rounded-md lg:max-w-[71%] min-w-[70%] cursor-pointer font-medium">Get In Touch</button>
         </form>
 
-        <!--contact text-->
+        
         <div>
-          <!--email and number-->
-          <!--text-[min(8vw,50px)]-->
           <div class="flex flex-col gap-2.5 items-center lg:items-start">
           <a href="mailto:test@gmail.com" class="flex items-center gap-2.5 font-bold text-[min(5.5vw,27px)] text-[var(--gray-900)]"><i class="bx bx-envelope"></i><span class="hover:underline">JssseJude@gmail.com</span></a> 
           <a href="#" class="flex items-center gap-2.5 font-bold text-[min(5.5vw,27px)] text-[var(--gray-900)]"><i class="bx bx-phone"></i><span class="hover:underline">+234 8141782331</span></a>
           </div>
 
-          <!--social media links-->
+
           <div class="flex flex-col gap-4 mt-8 items-center lg:items-start">
             <p class="text-[var(--gray-600)]">You may also find me on these platforms!</p>
             <div class="flex items-center gap-4">
@@ -599,7 +597,40 @@
           </div>
         </div>
 
-      </div>
+      </div> -->
+    
+        <!--contact text-->
+        <div>
+          <div class="flex flex-col gap-2.5 items-center">
+
+            <!--gmail-->
+            <div class="flex items-center gap-2.5">
+              <a href="mailto:test@gmail.com" class="flex items-center gap-2.5 font-bold text-[min(5.5vw,27px)] text-[var(--gray-900)]"><i class="bx bx-envelope"></i><span class="hover:underline">JssseJude@gmail.com</span></a>
+
+              <i class="bx bx-copy text-[min(5.5vw,27px)] text-[var(--gray-900)] cursor-pointer"></i>
+            </div>
+
+            <!--phone-->
+            <div class="flex items-center gap-2.5">
+              <a href="#" class="flex items-center gap-2.5 font-bold text-[min(5.5vw,27px)] text-[var(--gray-900)]"><i class="bx bx-phone"></i><span class="hover:underline">+234 8141782331</span></a>
+
+              <i class="bx bx-copy text-[min(5.5vw,27px)] text-[var(--gray-900)] cursor-pointer"></i>
+            </div>
+
+          </div>
+
+          <!--social media links-->
+          <div class="flex flex-col gap-4 mt-8 items-center">
+            <p class="text-[var(--gray-600)]">You may also find me on these platforms!</p>
+            <div class="flex items-center gap-4">
+            <a href="#" class="duration-200 transition-all ease-linear hover:bg-[var(--light-btn-hover)]"><i class="bx bxl-linkedin text-[var(--gray-800)] text-3xl"></i></a>
+            <a href="#" class="duration-200 transition-all ease-linear hover:bg-[var(--light-btn-hover)]"><i class="bx bxl-github text-[var(--gray-800)] text-3xl"></i></a>
+            <a href="#" class="duration-200 transition-all ease-linear hover:bg-[var(--light-btn-hover)]"><i class="bx bxl-twitter text-[var(--gray-800)] text-3xl"></i></a>
+            <a href="#" class="duration-200 transition-all ease-linear hover:bg-[var(--light-btn-hover)]"><i class="bx bxl-instagram text-[var(--gray-800)] text-3xl"></i></a>
+          </div>
+          </div>
+        </div>
+    
     </div>
   </section>
 
