@@ -625,6 +625,15 @@
   .text-\[min\(\)\] {
     font-size: min();
   }
+  .text-\[min\(5\.5vw\,27px\)\] {
+    font-size: min(5.5vw, 27px);
+  }
+  .text-\[min\(6vw\,27px\)\] {
+    font-size: min(6vw, 27px);
+  }
+  .text-\[min\(7vw\,27px\)\] {
+    font-size: min(7vw, 27px);
+  }
   .text-\[min\(7vw\,30px\)\] {
     font-size: min(7vw, 30px);
   }
@@ -661,8 +670,14 @@
   .text-\[min\(9vw\,50px\)\] {
     font-size: min(9vw, 50px);
   }
+  .text-\[min\(10vw\,27px\)\] {
+    font-size: min(10vw, 27px);
+  }
   .text-\[min\(10vw\,50px\)\] {
     font-size: min(10vw, 50px);
+  }
+  .text-\[min\(vw\,27px\)\] {
+    font-size: min(vw, 27px);
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -788,6 +803,11 @@
   .md\:hidden {
     @media (width >= 48rem) {
       display: none;
+    }
+  }
+  .md\:grid-cols-2 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
   .md\:grid-cols-6 {
