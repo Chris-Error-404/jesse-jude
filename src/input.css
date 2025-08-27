@@ -5,18 +5,6 @@
 @import 'tailwindcss';
 @custom-variant dark (&:where(.dark, .dark *)); /* dark-mode override */
 
-html{
-    scroll-behavior: smooth;
-}
-
-body{
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;  /* For macOS (Chrome/Safari) */
-  -moz-osx-font-smoothing: grayscale;   /* For macOS (Firefox) */
-  text-rendering: optimizeLegibility;   /* Improves readability */
-}
 
 :root {
   --gray-950: #030712;
@@ -59,6 +47,18 @@ body{
   --light-btn-text: #111827;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Inter", sans-serif; 
+    font-optical-sizing: auto;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;  /* For macOS (Chrome/Safari) */
+    -moz-osx-font-smoothing: grayscale;   /* For macOS (Firefox) */
+    text-rendering: optimizeLegibility;   /* Improves readability */
+}
 
 /* HAMBURGER MENU */
 .hamburger{
@@ -99,4 +99,10 @@ body{
 }
 .open .hamburger-bottom{
     transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+
+/* input */
+input,textarea,input::placeholder{
+    font-family: "Inter", sans-serif;
 }
