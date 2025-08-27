@@ -1,3 +1,15 @@
+//NAVBAR BLUR SCRIPT
+window.addEventListener("scroll", function () {
+  const navbar = document.getElementById("navbar");
+
+  if (window.scrollY > 50) {
+    navbar.classList.remove('bg-[var(--default)]');
+    navbar.classList.add("bg-[var(--default)]/70","backdrop-blur-md", "shadow-md");
+  } else {
+    navbar.classList.add('bg-[var(--default)]');
+    navbar.classList.remove("bg-[var(--default)]/70","backdrop-blur-md", "shadow-md");
+  }
+});
 
 
 //HAMBURGER MENU SCRIPT
@@ -102,6 +114,26 @@ copyBtn.forEach((btn) => {
 })
 
 
-//gmail copy script
+//COPY SCRIPT
+// Reusable function to copy text
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text).then(() => {
+    alert("Copied: " + text); // you can swap this for a toast/snackbar if you prefer
+  }).catch(err => {
+    console.error("Failed to copy: ", err);
+  });
+}
+
+// Copy email
+document.getElementById("emailCopyBtn").addEventListener("click", () => {
+  const email = document.getElementById("emailAddress").innerText;
+  copyToClipboard(email);
+});
+
+// Copy phone number
+document.getElementById("numberCopyBtn").addEventListener("click", () => {
+  const number = document.getElementById("phoneNumber").innerText;
+  copyToClipboard(number);
+});
 
 
