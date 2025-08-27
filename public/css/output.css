@@ -636,6 +636,13 @@
       }
     }
   }
+  .hover\:text-\[var\(--light-btn-hover\)\] {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--light-btn-hover);
+      }
+    }
+  }
   .hover\:underline {
     &:hover {
       @media (hover: hover) {
