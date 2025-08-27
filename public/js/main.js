@@ -73,3 +73,33 @@ btn.addEventListener('click', () => {
     }
   });
 
+
+
+//COPY BUTTON SCRIPTS
+//Copy Button Icon switch script
+let copyBtn = document.querySelectorAll('.bx-copy')
+
+copyBtn.forEach((btn) => {
+  btn.addEventListener('click', () => {
+  btn.classList.remove('bx-copy');
+  btn.classList.remove('text-[var(--gray-900)]')
+
+  btn.classList.add('bx-check');
+  btn.classList.add('text-[var(--emerald)]');
+
+  //revert the icon back after 3 seconds
+  setTimeout(() => {
+    btn.classList.remove('bx-check');
+    btn.classList.remove('text-[var(--emerald)]')
+
+    btn.classList.add('bx-copy');
+    btn.classList.add('text-[var(--gray-900)]');
+    
+  }, 3000);
+  })
+})
+
+
+//gmail copy script
+
+
