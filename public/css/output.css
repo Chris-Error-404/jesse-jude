@@ -477,12 +477,6 @@
   .bg-\[var\(--default\)\] {
     background-color: var(--default);
   }
-  .bg-\[var\(--default\)\]\/7 {
-    background-color: var(--default);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--default) 7%, transparent);
-    }
-  }
   .bg-\[var\(--default\)\]\/50 {
     background-color: var(--default);
     @supports (color: color-mix(in lab, red, red)) {
@@ -493,24 +487,6 @@
     background-color: var(--default);
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--default) 70%, transparent);
-    }
-  }
-  .bg-\[var\(--default\)\]\/76 {
-    background-color: var(--default);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--default) 76%, transparent);
-    }
-  }
-  .bg-\[var\(--default\)\]\/80 {
-    background-color: var(--default);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--default) 80%, transparent);
-    }
-  }
-  .bg-\[var\(--default\)\]\/90 {
-    background-color: var(--default);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--default) 90%, transparent);
     }
   }
   .bg-\[var\(--exp-card-bg\)\] {
