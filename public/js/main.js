@@ -20,10 +20,10 @@ window.addEventListener("scroll", function () {
 
   if (window.scrollY > 50) {
     navbar.classList.remove('bg-[var(--default)]');
-    navbar.classList.add("bg-[var(--default)]/80","backdrop-blur-xl", "shadow-md");
+    navbar.classList.add("bg-[var(--default)]/70","backdrop-blur-xl", "shadow-md");
   } else {
     navbar.classList.add('bg-[var(--default)]');
-    navbar.classList.remove("bg-[var(--default)]/80","backdrop-blur-xl", "shadow-md");
+    navbar.classList.remove("bg-[var(--default)]/70","backdrop-blur-xl", "shadow-md");
   }
 });
 
