@@ -99,12 +99,19 @@ themeToggle.addEventListener('click', (e) => {
 
     //flask svg color fix
     const flashSVG = document.getElementById('flaskSVG');
-    if (isDark === 'dark'){
-      flashSVG.setAttribute('fill','#fff');
-    }else{
+    if (isDark){
+      console.log(isDark)
+      console.log('on light mode')
       flashSVG.setAttribute('fill','#010101');
+    }else{
+      flashSVG.setAttribute('fill','#fff');
+      console.log('on dark mode');
+      console.log(isDark);
     }
+
   }
+
+
 
   // 5) Wire everything up when the DOM is ready
   document.addEventListener("DOMContentLoaded", () => {
@@ -179,18 +186,14 @@ document.getElementById("numberCopyBtn").addEventListener("click", () => {
   copyToClipboard(number);
 });
 
-
-/* 
-//  FLASK ICON COLOR FIX
-document.querySelectorAll(".theme-toggle").forEach((el) => {
-  const flashSVG = document.getElementById('flaskSVG');
-
-  el.addEventListener('click', () => {
-    if (flashSVG.getAttribute('fill') === '#fff'){
-        flashSVG.setAttribute('fill','#010101');
-    }else{
-      flashSVG.setAttribute('fill','#fff');
-    }
-  })
-
-}); */
+//SET FLASK SVG ON PAGE LOAD
+(() => {
+  const isDark = document.documentElement.classList.contains('dark');
+  const flaskSVG = document.getElementById('flaskSVG')
+  if (isDark === false) {
+    flaskSVG.setAttribute('fill','#010101');
+  }
+  else {
+    flaskSVG.setAttribute('fill','#fff');
+  }
+})()
