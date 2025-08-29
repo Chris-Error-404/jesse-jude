@@ -126,3 +126,12 @@ input,textarea,input::placeholder{
         display: none !important;
     }
 }
+
+/* general icon hover */
+i{
+    transition: all 0.2s linear;
+}
+
+i:hover{
+    transform: scale(0.9);
+}
