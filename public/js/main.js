@@ -96,6 +96,14 @@ themeToggle.addEventListener('click', (e) => {
   function toggleTheme() {
     const isDark = document.documentElement.classList.contains("dark");
     setTheme(isDark ? "light" : "dark");
+
+    //flask svg icon color fix
+    const flashSVG = document.getElementById('flaskSVG');
+    if (isDark === 'dark'){
+      flashSVG.setAttribute('fill','#fff');
+    }else{
+      flashSVG.setAttribute('fill','#010101');
+    }
   }
 
   // 5) Wire everything up when the DOM is ready
@@ -172,7 +180,7 @@ document.getElementById("numberCopyBtn").addEventListener("click", () => {
 });
 
 
-
+/* 
 //  FLASK ICON COLOR FIX
 document.querySelectorAll(".theme-toggle").forEach((el) => {
   const flashSVG = document.getElementById('flaskSVG');
@@ -185,4 +193,4 @@ document.querySelectorAll(".theme-toggle").forEach((el) => {
     }
   })
 
-});
+}); */
