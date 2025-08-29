@@ -27,3 +27,19 @@
   document.addEventListener('DOMContentLoaded', () => {
     removeAOS()
   });
+
+
+  //TESTIMONIAL CARD MOBILE AOS DELAY FIX
+  function testimonialAosfix () {
+    document.querySelectorAll('.testimonial-card').forEach((card) => {
+      card.setAttribute('data-aos-delay','0');
+    })
+  };
+
+  document.addEventListener('DOMContentLoaded', () => {
+    if(window.innerWidth < 1024){
+         testimonialAosfix()
+    }
+  });
+
+  
