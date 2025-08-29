@@ -1,3 +1,19 @@
+//SET FLASK and DJANGO SVG COLOR ON PAGE LOAD
+(() => {
+  const isDark = document.documentElement.classList.contains('dark');
+  const flaskSVG = document.getElementById('flaskSVG'); //flask SVG
+  const djangoSVG = document.getElementById('djangoSVG');
+  if (isDark === false) {
+    flaskSVG.setAttribute('fill','#010101');
+    djangoSVG.setAttribute('fill', '#092e20')
+  }
+  else {
+    flaskSVG.setAttribute('fill','#fff');
+    djangoSVG.setAttribute('fill', '#2e9c68');
+  }
+})()
+
+
 //NAVBAR BLUR SCRIPT
 window.addEventListener("scroll", function () {
   const navbar = document.getElementById("navbar");
@@ -97,18 +113,20 @@ themeToggle.addEventListener('click', (e) => {
     const isDark = document.documentElement.classList.contains("dark");
     setTheme(isDark ? "light" : "dark");
 
-    //flask svg color fix
+    //flask and django svg color toggling
     const flashSVG = document.getElementById('flaskSVG');
+    const djangoSVG = document.getElementById('djangoSVG');
     if (isDark){
-      console.log(isDark)
-      console.log('on light mode')
+      //console.log(isDark)
+      //console.log('on light mode')
       flashSVG.setAttribute('fill','#010101');
+      djangoSVG.setAttribute('fill','#092e20')
     }else{
       flashSVG.setAttribute('fill','#fff');
-      console.log('on dark mode');
-      console.log(isDark);
+      djangoSVG.setAttribute('fill','#2e9c68')
+      //console.log('on dark mode');
+      //console.log(isDark);
     }
-
   }
 
 
@@ -185,15 +203,3 @@ document.getElementById("numberCopyBtn").addEventListener("click", () => {
   const number = document.getElementById("phoneNumber").innerText;
   copyToClipboard(number);
 });
-
-//SET FLASK SVG ON PAGE LOAD
-(() => {
-  const isDark = document.documentElement.classList.contains('dark');
-  const flaskSVG = document.getElementById('flaskSVG')
-  if (isDark === false) {
-    flaskSVG.setAttribute('fill','#010101');
-  }
-  else {
-    flaskSVG.setAttribute('fill','#fff');
-  }
-})()

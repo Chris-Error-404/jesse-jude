@@ -768,6 +768,11 @@
       display: none;
     }
   }
+  .lg\:inline {
+    @media (width >= 64rem) {
+      display: inline;
+    }
+  }
   .lg\:min-h-\[90svh\] {
     @media (width >= 64rem) {
       min-height: 90svh;
