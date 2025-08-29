@@ -172,3 +172,17 @@ document.getElementById("numberCopyBtn").addEventListener("click", () => {
 });
 
 
+
+//  FLASK ICON COLOR FIX
+document.querySelectorAll(".theme-toggle").forEach((el) => {
+  const flashSVG = document.getElementById('flaskSVG');
+
+  el.addEventListener('click', () => {
+    if (flashSVG.getAttribute('fill') === '#fff'){
+        flashSVG.setAttribute('fill','#010101');
+    }else{
+      flashSVG.setAttribute('fill','#fff');
+    }
+  })
+
+});
