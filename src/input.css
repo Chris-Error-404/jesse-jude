@@ -120,3 +120,9 @@ input,textarea,input::placeholder{
     font-family: "Inter", sans-serif;
 }
 
+/* briefcase styling mobile */
+@media (max-width: 1024px){
+    .bx-briefcase {
+        display: none !important;
+    }
+}

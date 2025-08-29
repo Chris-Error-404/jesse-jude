@@ -4,7 +4,7 @@
     offset: 120,
     duration: 400,
     easing: 'ease',
-    disable: function() {
+ /*    disable: function() {
         return window.innerWidth < 1024;
-    }
+    } */
   });
