@@ -22,8 +22,8 @@
     else{
       aboutText.setAttribute('data-aos','fade-left');
     }
-  }
+  };
 
   document.addEventListener('DOMContentLoaded', () => {
     removeAOS()
-  })
+  });

@@ -5,7 +5,7 @@
   const djangoSVG = document.getElementById('djangoSVG');
   if (isDark === false) {
     flaskSVG.setAttribute('fill','#010101');
-    djangoSVG.setAttribute('fill', '#092e20')
+    djangoSVG.setAttribute('fill', '#092e20');
   }
   else {
     flaskSVG.setAttribute('fill','#fff');
