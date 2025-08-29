@@ -97,7 +97,7 @@ themeToggle.addEventListener('click', (e) => {
     const isDark = document.documentElement.classList.contains("dark");
     setTheme(isDark ? "light" : "dark");
 
-    //flask svg icon color fix
+    //flask svg color fix
     const flashSVG = document.getElementById('flaskSVG');
     if (isDark === 'dark'){
       flashSVG.setAttribute('fill','#fff');
